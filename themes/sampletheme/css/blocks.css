@@ -28,3 +28,22 @@
 .has-strong-magenta-color {
     color: #a156b4;
 }
+
+header {
+    color: black;
+}
+
+.cell ul {
+    font-size: 14px;
+    list-style: none;
+}
+
+.cell h5 {
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+footer {
+    color: white;
+    background-color: black;
+}

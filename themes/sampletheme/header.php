@@ -28,7 +28,7 @@
 	<header id="masthead" class="site-header">
 		<div class="grid-container">
 			<div class="grid-x">
-				<div class="cell small-4">
+				<div class="cell small-6">
 				<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -48,8 +48,7 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 				</div>
-				<div class="cell small-4"></div>
-				<div class="cell small-4">
+				<div class="cell small-6">
 					<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'sampletheme' ); ?></button>
 				<?php
