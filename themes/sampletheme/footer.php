@@ -12,6 +12,13 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+		<div class="grid-container">
+			<div class="grid-x">
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+			</div>
+		</div>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sampletheme' ) ); ?>">
 				<?php

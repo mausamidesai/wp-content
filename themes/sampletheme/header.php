@@ -48,7 +48,7 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 				</div>
-				<div class="cell small-4">TEST</div>
+				<div class="cell small-4"></div>
 				<div class="cell small-4">
 					<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'sampletheme' ); ?></button>
@@ -60,7 +60,7 @@
 					)
 				);
 				?>
-			</nav><!-- #site-navigation -->
+			</nav>
 				</div>
 			</div>
 		</div>
