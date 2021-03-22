@@ -31,6 +31,33 @@ function sampletheme_customize_register( $wp_customize ) {
 			)
 		);
 	}
+
+	$wp_customize->add_panel( 'social_media', 
+	array(
+		'priority'       => 10,
+		'capability'     => 'edit_theme_options',
+		'theme_supports' => '',
+		'title'          => 'Social Media',
+		'description'    => 'Add social links',
+	)
+    );
+
+	$wp_customize->add_section(
+		'facebook_link',
+		array(
+			'title'          => 'Facebook Link',
+			'capability'     => 'edit_theme_options',
+			'panel'          => 'social_media',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'facebook_url',
+		array(
+			'default'        => '',
+			'transport'     => 'refresh',
+		)
+	);
 }
 add_action( 'customize_register', 'sampletheme_customize_register' );
 
