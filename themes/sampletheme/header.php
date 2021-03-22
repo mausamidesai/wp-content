@@ -59,6 +59,31 @@
 					)
 				);
 				?>
+
+				<?php
+					$facebook_url = get_theme_mod( 'facebook_url' );
+					$twitter_url = get_theme_mod( 'twitter_url' );
+					$linkedin_url = get_theme_mod( 'linkedin_url' );
+
+					if ( $facebook_url ){ 
+						?>
+						<a class="facebook-link" href="<?php echo esc_url($facebook_url); ?>"><?php echo esc_html__( 'Facebook', 'sampletheme' ); ?></a>
+						<?php 
+					} 
+
+					if ( $twitter_url ){ 
+						?>
+						<a class="twitter-link" href="<?php echo esc_url($twitter_url); ?>"><?php echo esc_html__( 'Twitter', 'sampletheme' ); ?></a>
+						<?php 
+					} 
+
+					if ( $linkedin_url ){ 
+						?>
+						<a class="linkedin-link" href="<?php echo esc_url($linkedin_url); ?>"><?php echo esc_html__( 'LinkedIn', 'sampletheme' ); ?></a>
+						<?php 
+					} 
+				?>
+				
 			</nav>
 				</div>
 			</div>
