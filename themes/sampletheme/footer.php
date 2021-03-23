@@ -13,7 +13,6 @@
 </div>
 	<footer id="colophon" class="site-footer">
 		<div class="grid-container">
-<<<<<<< HEAD
 			<div class="grid-x">
 				<div class="cell small-3">
 				<div class="site-info">
@@ -30,7 +29,7 @@
 				?>
 		</div><!-- .site-info -->
 				</div>
-=======
+
 			<div class="grid-x grid-padding-x">
 
 				
@@ -45,7 +44,6 @@
 				// }
 				?> -->
 				
->>>>>>> staging
 				<div class="cell small-3">
 					<div class="footerOne">
 					<h5>QUICK LINKS</h5>
