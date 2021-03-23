@@ -15,7 +15,7 @@
 get_header();
 ?>
 <div class="grid-container">
-<div class="grid-x">
+<div class="grid-x grid-margin-x grid-margin-y">
 
     <div class="cell small-12 medium-8">
 	<main id="primary" class="site-main">

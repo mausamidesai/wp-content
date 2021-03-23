@@ -110,7 +110,9 @@ if ( ! function_exists( 'sampletheme_setup' ) ) :
 		/*
 		 * add support for align wide
 		 */
-		add_theme_support( 'align-wide' );
+		if ( ! is_page_template( 'templates/sidebar-right.php')) {
+			add_theme_support( 'align-wide' );
+		}
 
 		/*
 		 * add support for custom pallet
