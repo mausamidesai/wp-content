@@ -13,26 +13,7 @@
 </div>
 	<footer id="colophon" class="site-footer">
 		<div class="grid-container">
-			<div class="grid-x">
-				<div class="cell small-3">
-				<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sampletheme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'sampletheme' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'sampletheme' ), 'sampletheme', '<a href="https://mausamidesai.com">Mausami Desai</a>' );
-				?>
-		</div><!-- .site-info -->
-				</div>
 
-			<div class="grid-x grid-padding-x">
-
-				
 				<!-- <?php 
 				// if(has_nav_menu('menu-footer')) {
 				// wp_nav_menu(
@@ -44,6 +25,7 @@
 				// }
 				?> -->
 				
+				<div class="grid-x grid-padding-x">
 				<div class="cell small-3">
 					<div class="footerOne">
 					<h5>QUICK LINKS</h5>
@@ -113,6 +95,25 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="grid-container">
+		<div class="grid-x grid-padding-x">
+				<div class="site-info">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sampletheme' ) ); ?>">
+				<?php
+				/* translators: %s: CMS name, i.e. WordPress. */
+				printf( esc_html__( 'Proudly powered by %s', 'sampletheme' ), 'WordPress' );
+				?>
+			</a>
+			<span class="sep"> | </span>
+				<?php
+				/* translators: 1: Theme name, 2: Theme author. */
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'sampletheme' ), 'sampletheme', '<a href="https://mausamidesai.com">Mausami Desai</a>' );
+				?>
+		    </div><!-- .site-info -->
+			</div>
+			</div>
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
