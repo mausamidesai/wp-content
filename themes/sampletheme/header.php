@@ -28,27 +28,14 @@
 	<header id="masthead" class="site-header">
 		<div class="grid-container">
 			<div class="grid-x">
-				<div class="cell small-6">
+				<div class="cell small-3">
 				<div class="site-branding">
 			<?php
 			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$sampletheme_description = get_bloginfo( 'description', 'display' );
-			if ( $sampletheme_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $sampletheme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+			?>
 		</div><!-- .site-branding -->
 				</div>
-				<div class="cell small-6">
+				<div class="cell small-9">
 					<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'sampletheme' ); ?></button>
 				<?php
@@ -89,3 +76,4 @@
 			</div>
 		</div>
 	</header><!-- #masthead -->
+	<div class="site-content grid-container">

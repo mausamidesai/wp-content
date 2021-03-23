@@ -47,3 +47,7 @@ footer {
     color: white;
     background-color: black;
 }
+
+.wp-block {
+    max-width: 75rem;
+}
