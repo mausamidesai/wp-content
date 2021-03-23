@@ -208,6 +208,11 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/woocommerce.php';
 
 /**
+ * custom post types.
+ */
+require get_template_directory() . '/inc/post-types.php';
+
+/**
  * Enqeuing block editor assets
  */
 function sampletheme_enqueue_block_editor_assets() {
