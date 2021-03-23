@@ -34,3 +34,18 @@
     margin-right: calc( 50% - 45rem );
     margin-left: calc( 50% - 45rem );
 }
+
+button.single_add_to_cart_button.button.alt  {
+    background-color: #18b8c4;
+    color: black;
+    margin-left: 20px;
+}
+
+button.single_add_to_cart_button.button.alt:hover  {
+    background-color: #ffaf3c;
+    color: black;
+}
+
+bdi {
+    color: #8cc543;
+}
