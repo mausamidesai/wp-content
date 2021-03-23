@@ -16,6 +16,14 @@ wp.blocks.registerBlockStyle(
 
 //wp.blocks.unregisterBlockStyle( 'core/quote', 'fancy-quote' );
 
+wp.blocks.registerBlockStyle( 
+    'core/group', 
+    {
+        name: 'alignnarrow',
+        label: 'Narrow width'
+    } 
+);
+
 wp.domReady( function() {
 //    wp.blocks.unregisterBlockStyle( 'core/quote', 'default' );
     wp.blocks.unregisterBlockStyle( 'core/quote', 'large' );

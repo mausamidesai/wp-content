@@ -109,7 +109,9 @@ if ( ! function_exists( 'sampletheme_setup' ) ) :
 		/*
 		 * add support for align wide
 		 */
-		add_theme_support( 'align-wide' );
+		if ( ! is_page_template( 'templates/sidebar-right.php')) {
+			add_theme_support( 'align-wide' );
+		}
 
 		/*
 		 * add support for custom pallet
@@ -118,7 +120,7 @@ if ( ! function_exists( 'sampletheme_setup' ) ) :
 			array(
 				'name' => esc_attr__( 'strong magenta', 'sampletheme' ),
 				'slug' => 'strong-magenta',
-				'color' => '#a156b4',
+				'color' => '#ffaf3c',
 			),
 		) );
 	}
@@ -167,6 +169,8 @@ function sampletheme_scripts() {
 	// Foundation
 	wp_enqueue_style( 'foundation-style', get_template_directory_uri() . '/css/vendor/foundation.css' );
 	wp_enqueue_script( 'foundation-script', get_template_directory_uri() . '/js/vendor/foundation.js', array(), false, true );
+
+	wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/custom.css' );
 
 	// Bootstrap
 	// wp_enqueue_style( 'bootstrap-style' get_template_directory_uri() . '/css/vendor/bootstrap.min.css' );

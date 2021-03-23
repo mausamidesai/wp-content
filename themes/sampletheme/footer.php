@@ -10,9 +10,10 @@
  */
 
 ?>
-
+</div>
 	<footer id="colophon" class="site-footer">
 		<div class="grid-container">
+<<<<<<< HEAD
 			<div class="grid-x">
 				<div class="cell small-3">
 				<div class="site-info">
@@ -29,6 +30,22 @@
 				?>
 		</div><!-- .site-info -->
 				</div>
+=======
+			<div class="grid-x grid-padding-x">
+
+				
+				<!-- <?php 
+				// if(has_nav_menu('menu-footer')) {
+				// wp_nav_menu(
+				// 	array(
+				// 		'theme_location' => 'menu-footer',
+				// 		'menu_id'        => 'footer-menu',
+				// 	)
+				// );
+				// }
+				?> -->
+				
+>>>>>>> staging
 				<div class="cell small-3">
 					<div class="footerOne">
 					<h5>QUICK LINKS</h5>
@@ -69,6 +86,32 @@
 						<li> Investor Relations </li>
 					</ul>
 					</div>
+				</div>
+
+				<div class="cell small-3">
+				<?php
+					$facebook_url = get_theme_mod( 'facebook_url' );
+					$twitter_url = get_theme_mod( 'twitter_url' );
+					$linkedin_url = get_theme_mod( 'linkedin_url' );
+
+					if ( $facebook_url ){ 
+						?>
+						<a class="facebook-link" href="<?php echo esc_url($facebook_url); ?>"><?php echo esc_html__( 'Facebook', 'sampletheme' ); ?></a>
+						<?php 
+					} 
+
+					if ( $twitter_url ){ 
+						?>
+						<a class="twitter-link" href="<?php echo esc_url($twitter_url); ?>"><?php echo esc_html__( 'Twitter', 'sampletheme' ); ?></a>
+						<?php 
+					} 
+
+					if ( $linkedin_url ){ 
+						?>
+						<a class="linkedin-link" href="<?php echo esc_url($linkedin_url); ?>"><?php echo esc_html__( 'LinkedIn', 'sampletheme' ); ?></a>
+						<?php 
+					} 
+				?>
 				</div>
 			</div>
 		</div>

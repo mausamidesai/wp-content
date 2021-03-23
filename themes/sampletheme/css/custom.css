@@ -1,0 +1,36 @@
+.grid-container {
+    max-width: 75rem;
+}
+
+.alignwide {
+    max-width: 80rem;
+    width: 100vw;
+    margin-right: calc( 50% - 40rem );
+    margin-left: calc( 50% - 40rem );
+    transition: all ease-in-out .25s;
+}
+
+@media ( max-width: 92rem ) {
+    .alignwide {
+        max-width: 96vw;
+        width: 100vw;
+        margin-right: calc( 50% - 48vw );
+        margin-left: calc( 50% - 48vw );
+    }
+}
+
+@media ( max-width: 82rem ) {
+    .alignwide {
+        max-width: unset;
+        width: unset;
+        margin-right: unset;
+        margin-left: unset;
+    }
+}
+
+.alignfull {
+    max-width: 90rem;
+    width: 100vw;
+    margin-right: calc( 50% - 45rem );
+    margin-left: calc( 50% - 45rem );
+}
