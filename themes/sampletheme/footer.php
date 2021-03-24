@@ -12,24 +12,32 @@
 ?>
 </div>
 
-<?php
-$bag_args = array(
-	'post_type' => 'sampletheme_bag',
-	'posts_per_page' => 3,
-);
-
-$bag_query = new WP_Query( $bag_args );
-
-if ( $bag_query->have_posts() ) {
-	while ( $bag_query->have_posts() ) {
-		$bag_query->the_post();
-		?>
-		<h4 class="hQuery"><?php the_title(); ?></h4>
-		<p><?php the_excerpt(); ?></p>
+<div class="grid-container">
+	<div class="grid-x grid-padding-x">
 		<?php
-	}
-}
-?>
+		$bag_args = array(
+			'post_type' => 'sampletheme_bag',
+			'posts_per_page' => 3,
+		);
+
+		$bag_query = new WP_Query( $bag_args );
+
+		if ( $bag_query->have_posts() ) {
+			while ( $bag_query->have_posts() ) {
+				$bag_query->the_post();
+				?>
+					<h4 class= "qTitle"><?php the_title(); ?></h4>
+					<p class= "qExcerpt"><?php the_excerpt(); ?></p>
+					<div class= "qpic">
+						<?php the_post_thumbnail(); ?>
+					</div>
+					<?php get_permalink(); ?>
+				<?php
+			}
+		}
+		?>
+	</div>
+</div>
 
 	<footer id="colophon" class="site-footer">
 		<div class="grid-container">

@@ -43,6 +43,7 @@ function bag_init() {
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => null,
+        'menu_icon'          => 'dashicons-star-filled',
         'supports'           => array( 'title', 'editor', 'author', 'thumbnail' ),
         'show_in_rest'       => true
     );
