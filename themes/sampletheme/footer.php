@@ -13,18 +13,19 @@
 </div>
 
 <?php
-$recipe_args = array(
-	'post_type' => 'sampletheme_recipe',
+$bag_args = array(
+	'post_type' => 'sampletheme_bag',
 	'posts_per_page' => 3,
 );
 
-$recipe_query = new WP_Query( $recipe_args );
+$bag_query = new WP_Query( $bag_args );
 
-if ( $recipe_query->have_posts() ) {
-	while ( $recipe_query->have_posts() ) {
-		$recipe_query->the_post();
+if ( $bag_query->have_posts() ) {
+	while ( $bag_query->have_posts() ) {
+		$bag_query->the_post();
 		?>
-		<h2><?php the_title(); ?></h2>
+		<h4 class="hQuery"><?php the_title(); ?></h4>
+		<p><?php the_excerpt(); ?></p>
 		<?php
 	}
 }

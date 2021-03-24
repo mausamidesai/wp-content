@@ -208,7 +208,7 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/woocommerce.php';
 
 /**
- * custom post types.
+ * custom post types for this site.
  */
 require get_template_directory() . '/inc/post-types.php';
 

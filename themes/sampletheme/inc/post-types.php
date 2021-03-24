@@ -3,7 +3,7 @@
  * Registering custom post types
  */
 
-function sampletheme_init() {
+function bag_init() {
     $labels = array(
         'name'                  => _x( 'Bags', 'Post type general name', 'bag' ),
         'singular_name'         => _x( 'Bag', 'Post type singular name', 'bag' ),
@@ -47,8 +47,7 @@ function sampletheme_init() {
         'show_in_rest'       => true
     );
     
-    register_post_type( 'sampletheme_recipe', $args );
+    register_post_type( 'sampletheme_bag', $args );
 }
-add_action( 'init', 'sampletheme_init' );
+add_action( 'init', 'bag_init' );
 
-?>
