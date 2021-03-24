@@ -121,7 +121,7 @@ if ( ! function_exists( 'sampletheme_post_thumbnail' ) ) :
 	 */
 	function sampletheme_post_thumbnail() {
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
-			return;
+			return; // stops running the function
 		}
 
 		if ( is_singular() ) :

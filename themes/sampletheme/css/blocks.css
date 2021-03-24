@@ -48,6 +48,7 @@ footer {
     background-color: black;
 }
 
+/* Editor Block */
 .wp-block {
     max-width: 75rem;
 }
@@ -56,6 +57,7 @@ footer {
     max-width: 80rem;
 }
 
+/* Block alignment */
 .is-style-alignarrow {
     max-width: 70rem;
     margin-left: auto;

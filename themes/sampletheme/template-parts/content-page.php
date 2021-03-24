@@ -10,11 +10,41 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	<?php
+	if ( get_the_title() ) { 
+		if ( function_exists( 'get_field' ) ) {
+			$sub_title = get_field( 'sampletheme_page_header_sub_title' );
+			$toggle_title = get_field( 'sampletheme_page_header_toggle_title' );
+			if ( empty( $toggle_title ) ) {
+				?>
+					<header class="entry-header">
+						<?php 
+							the_title( '<h1 class="entry-title">', '</h1>' );
+						    if ( ! empty( $sub_title ) ) {
+								?>
+								<p><?php echo esc_html($sub_title); ?></p>
+								<?php
+							}
+						?>
+					</header><!-- .entry-header -->
+				<?php 
+			}
+		} else {
+			?>
+				<header class="entry-header">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				</header><!-- .entry-header -->
+			<?php } ?>
+	<?php } ?>	
+	
 
-	<?php sampletheme_post_thumbnail(); ?>
+	<?php // sampletheme_post_thumbnail(); ?>
+
+	<?php if ( has_post_thumbnail() ) { ?>
+	<div class="post-thumbnail">
+		<img src="<?php echo esc_url( get_the_post_thumbnail_url() ); ?>">
+	</div><!-- post thumbnail -->
+	<?php } ?>
 
 	<div class="entry-content">
 		<?php
