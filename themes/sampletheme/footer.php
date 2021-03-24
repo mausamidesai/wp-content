@@ -28,10 +28,10 @@
 				?>
 					<h4 class= "qTitle"><?php the_title(); ?></h4>
 					<p class= "qExcerpt"><?php the_excerpt(); ?></p>
+					<p class= "qPostLink"><?php echo '<a href="' . esc_url( get_permalink() ) . '" class="qLink">Read more</a>'?></p>
 					<div class= "qpic">
 						<?php the_post_thumbnail(); ?>
 					</div>
-					<?php get_permalink(); ?>
 				<?php
 			}
 		}
