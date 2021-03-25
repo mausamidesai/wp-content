@@ -148,7 +148,7 @@ a.added_to_cart.wc-forward {
     text-shadow: none;
 }
 
-/* add to cart button in product page */
+/* product page */
 button.single_add_to_cart_button.button.alt  {
     background-color: #18b8c4;
     color: black;
@@ -160,7 +160,34 @@ button.single_add_to_cart_button.button.alt:hover  {
     color: black;
 }
 
+.summary.entry-summary {
+    text-align: center;
+}
+
+form.cart {
+    margin-left: 200px;
+}
+
+#tab-description {
+    text-align: center;
+}
+
+section.related.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* checkout page */
+button#place_order {
+    background-color: #18b8c4;
+}
+
 /* cart page */
 a.checkout-button.button.alt.wc-forward {
+    background-color: #18b8c4;
+}
+
+/* contact page */
+button#wsf-1-field-14 {
     background-color: #18b8c4;
 }
