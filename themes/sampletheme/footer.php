@@ -26,11 +26,15 @@
 			while ( $bag_query->have_posts() ) {
 				$bag_query->the_post();
 				?>
-					<h4 class= "qTitle"><?php the_title(); ?></h4>
-					<p class= "qExcerpt"><?php the_excerpt(); ?></p>
-					<p class= "qPostLink"><?php echo '<a href="' . esc_url( get_permalink() ) . '" class="qLink">Read more</a>'?></p>
+					<div class= "small-12 large-12 cell">
+						<h3 class= "qTitle"><?php the_title(); ?></h3>
+					</div>
 					<div class= "qpic">
 						<?php the_post_thumbnail(); ?>
+					</div>
+					<div class= "small-12 large-12 cell text">
+						<p class= "qExcerpt"><?php the_excerpt(); ?></p>
+						<p class= "qPostLink"><?php echo '<a href="' . esc_url( get_permalink() ) . '" class="qLink">Read more</a>'?></p>
 					</div>
 				<?php
 			}

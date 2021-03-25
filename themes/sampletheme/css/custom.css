@@ -2,6 +2,34 @@
     max-width: 75rem;
 }
 
+/* header */
+header {
+    color: black;
+}
+
+.cell ul {
+    font-size: 14px;
+    list-style: none;
+}
+
+.cell h5 {
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+/* footer */
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    background-color: black;
+}
+
+footer.entry-footer {
+    display: none;
+}
+
+/* align of blocks */
 .alignwide {
     max-width: 80rem;
     width: 100vw;
@@ -35,6 +63,43 @@
     margin-left: calc( 50% - 45rem );
 }
 
+/* archive page */
+.page-title {
+    color: #000;
+    text-align: center;
+}
+
+h2.entry-title {
+    text-align: center;
+}
+
+.hQuery {
+    color: crimson;
+}
+
+/* A custom WP_Query() */
+h3.qTitle {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text {
+    margin-bottom: 50px;
+}
+
+.text p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.qLink {
+    font-size: 20px;
+    padding: 15px;
+    background-color: #ffaf3c;
+    cursor: pointer;
+}
+
+/* add to cart button in shop page */
 button.single_add_to_cart_button.button.alt  {
     background-color: #18b8c4;
     color: black;
