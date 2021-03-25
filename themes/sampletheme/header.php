@@ -29,31 +29,27 @@
 		<div class="grid-container">
 			<div class="grid-x">
 				<div class="cell small-2">
-				<div class="site-branding">
-			<?php
-			the_custom_logo();
-			?>
-		</div><!-- .site-branding -->
-				</div>
-				<div class="cell small-8">
+					<div class="site-branding">
+						<?php
+							the_custom_logo();
+						?>
+					</div><!-- .site-branding -->
+				</div><!-- .cell -->
+				<div class="cell small-10">
 					<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'sampletheme' ); ?></button>
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					)
-				);
-				?>
-
-			<div class="cell small-2">
-				<?php echo get_search_form(); ?>
-			</div>
-				
-			</nav>
-				</div>
-			</div>
-		</div>
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'primary-menu',
+						)
+					);
+					?>
+					<?php echo get_search_form(); ?>
+					</nav><!-- .site-navigation -->
+				</div><!-- .cell -->
+			</div><!-- .grid-x -->
+		</div><!-- .grid-container -->
 	</header><!-- #masthead -->
 	<div class="site-content grid-container">
