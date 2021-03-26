@@ -46,10 +46,15 @@
 						)
 					);
 					?>
-					<?php echo get_search_form(); ?>
 					</nav><!-- .site-navigation -->
 				</div><!-- .cell -->
 			</div><!-- .grid-x -->
+			<div class="grid-x">
+				<div class="cell small-8"></div>
+				<div class="cell small-4 search">
+					<?php echo get_search_form(); ?>
+				</div>
+			</div>
 		</div><!-- .grid-container -->
 	</header><!-- #masthead -->
 	<div class="site-content grid-container">

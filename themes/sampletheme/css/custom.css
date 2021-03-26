@@ -9,6 +9,15 @@ header#masthead {
     border-bottom: 2px solid #a9a9a9;
 }
 
+.menu a {
+    color: black;
+    padding-right: 30px;
+}
+
+.menu a:hover {
+    color: #18b8c4;
+}
+
 .cell ul {
     margin-top: 10px;
     font-size: 20px;
