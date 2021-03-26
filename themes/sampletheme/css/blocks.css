@@ -1,4 +1,4 @@
-/* Editor Block */
+/* Editor Block styling */
 .wp-block-quote,
 .wp-block-quote.is-style-default {
     color: blue;
@@ -30,7 +30,7 @@
     color: #a156b4;
 }
 
-/* Editor Block */
+/* Editor Block styling */
 .wp-block {
     max-width: 75rem;
 }
@@ -39,7 +39,7 @@
     max-width: 80rem;
 }
 
-/* Block alignment */
+/* Block alignment styling */
 .is-style-alignarrow {
     max-width: 70rem;
     margin-left: auto;

@@ -42,6 +42,9 @@ function sampletheme_customize_register( $wp_customize ) {
 	// )
     // );
 
+	/*
+	* add section to the social media
+	*/
 	$wp_customize->add_section(
 		'social_media',
 		array(
@@ -51,6 +54,9 @@ function sampletheme_customize_register( $wp_customize ) {
 		)
 	);
 
+	/*
+	* customize api for facebook
+	*/
 	$wp_customize->add_setting(
 		'facebook_url',
 		array(
@@ -68,6 +74,9 @@ function sampletheme_customize_register( $wp_customize ) {
 		)
 	);
 
+	/*
+	* customize api for twitter
+	*/
 	$wp_customize->add_setting(
 		'twitter_url',
 		array(
@@ -85,6 +94,9 @@ function sampletheme_customize_register( $wp_customize ) {
 		)
 	);
 
+	/*
+	* customize api for linkedin
+	*/
 	$wp_customize->add_setting(
 		'linkedin_url',
 		array(

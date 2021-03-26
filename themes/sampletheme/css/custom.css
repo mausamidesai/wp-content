@@ -1,9 +1,9 @@
-/* grid container */
+/* grid container styling */
 .grid-container {
     max-width: 75rem;
 }
 
-/* header */
+/* header styling */
 header#masthead {
     padding-top: 10px;
     color: black;
@@ -30,7 +30,7 @@ header#masthead {
     text-decoration: underline;
 }
 
-/* footer */
+/* footer styling */
 footer {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -75,7 +75,7 @@ footer.entry-footer {
     color: #18b8c4;
 }
 
-/* align of blocks */
+/* align of blocks styling */
 .alignwide {
     max-width: 80rem;
     width: 100vw;
@@ -109,7 +109,7 @@ footer.entry-footer {
     margin-left: calc( 50% - 45rem );
 }
 
-/* archive page */
+/* archive page styling */
 .page-title {
     color: #000;
     text-align: center;
@@ -131,14 +131,14 @@ h2.entry-title {
     color: crimson;
 }
 
-/* Custom post type */
+/* Custom post type styling */
 h1.entry-title {
     margin-top: 30px;
     font-size: 2.5 rem;
     text-align: center;
 }
 
-/* A custom WP_Query() */
+/* A custom WP_Query() styling */
 h3.qTitle {
     margin-bottom: 20px;
     text-align: center;
@@ -168,7 +168,7 @@ a.qLink {
     background-color: #ffaf3c;
 }
 
-/* shop page */
+/* shop page styling */
 h2.woocommerce-loop-product__title {
     color: black;
     font-weight: 600;
@@ -219,7 +219,7 @@ p.woocommerce-result-count {
     font-weight: 600;
 }
 
-/* product page */
+/* product page styling */
 button.single_add_to_cart_button.button.alt  {
     background-color: #18b8c4;
     color: black;
@@ -248,7 +248,7 @@ section.related.products h2 {
     margin-bottom: 20px;
 }
 
-/* checkout page */
+/* checkout page styling */
 button#place_order {
     background-color: #18b8c4;
 }
@@ -257,7 +257,7 @@ button#place_order:hover {
     background-color: #ffaf3c;
 }
 
-/* cart page */
+/* cart page styling */
 .woocommerce .cart .button, .woocommerce .cart input.button {
     background-color: #18b8c4;
     color: white;
@@ -271,7 +271,7 @@ a.checkout-button.button.alt.wc-forward:hover {
     background-color: #ffaf3c;
 }
 
-/* contact page */
+/* contact page styling */
 button#wsf-1-field-14 {
     background-color: #18b8c4;
 }

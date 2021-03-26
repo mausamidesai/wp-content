@@ -30,37 +30,26 @@
 					<!-- Title of bag post type -->
 					<div class= "small-12 large-12 cell">
 						<h3 class= "qTitle"><?php the_title(); ?></h3>
-					</div>
+					</div><!-- .cell -->
 					<!-- Featured Image of bag post type -->
 					<div class= "qpic">
 						<?php the_post_thumbnail(); ?>
-					</div>
+					</div><!-- .qpic -->
 					<div class= "small-12 large-12 cell text">
 						<!-- Excerpt of bag post type -->
 						<p class= "qExcerpt"><?php the_excerpt(); ?></p>
 						<!-- Post Link of bag post type -->
 						<p class= "qPostLink"><?php echo '<a href="' . esc_url( get_permalink() ) . '" class="qLink">Read more</a>'?></p>
-					</div>
+					</div><!-- .text -->
 				<?php
 			}
 		}
 		?>
-	</div>
-</div>
+	</div><!-- .grid-x -->
+</div><!-- .grid-container -->
 
 	<footer id="colophon" class="site-footer">
 		<div class="grid-container">
-
-			    <?php 
-				// if(has_nav_menu('menu-footer')) {
-				// wp_nav_menu(
-				// 	array(
-				// 		'theme_location' => 'menu-footer',
-				// 		'menu_id'        => 'footer-menu',
-				// 	)
-				// );
-				// }
-				?> 
 				
 				<div class="grid-x grid-padding-x">
 				<!-- Quick links of the site -->
@@ -77,7 +66,7 @@
 						<li> <a href= "https://cwd450001.local/cart/">Cart</a> </li>
 						<li> <a href= "https://cwd450001.local/blog/">Blog</a> </li>
 					</ul>
-					</div>
+					</div><!-- .footerOne -->
 				</div>
 				<!-- Customer care of the site -->
 				<div class="cell small-3">
@@ -93,7 +82,7 @@
 						<li> Gift Services </li>
 						<li> Store Locator </li>
 					</ul>
-					</div>
+					</div><!-- .footerTwo -->
 				</div>
 				<!-- About of the site -->
 				<div class="cell small-3">
@@ -107,7 +96,7 @@
 						<li> Tapestry </li>
 						<li> Investor Relations </li>
 					</ul>
-					</div>
+					</div><!-- .footerThree -->
 				</div>
 
 				<!-- Social media links -->
@@ -135,9 +124,9 @@
 						<?php 
 					} 
 				?>
-				</div>
+				</div><!-- .social -->
 			</div>
-		</div>
+		</div><!-- .grid-container -->
 		
 		<!-- copyright -->
 		<div class="grid-container">
