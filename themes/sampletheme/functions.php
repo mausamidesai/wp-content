@@ -47,7 +47,9 @@ if ( ! function_exists( 'sampletheme_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in one location.
+		/*
+		* This theme uses wp_nav_menu() in one location.
+		*/
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'sampletheme' ),
@@ -71,7 +73,9 @@ if ( ! function_exists( 'sampletheme_setup' ) ) :
 			)
 		);
 
-		// Set up the WordPress core custom background feature.
+		/*
+		* Set up the WordPress core custom background feature.
+		*/
 		add_theme_support(
 			'custom-background',
 			apply_filters(
@@ -83,7 +87,9 @@ if ( ! function_exists( 'sampletheme_setup' ) ) :
 			)
 		);
 
-		// Add theme support for selective refresh for widgets.
+		/*
+		* Add theme support for selective refresh for widgets.
+		*/
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
 		/**
@@ -170,6 +176,7 @@ function sampletheme_scripts() {
 	wp_enqueue_style( 'foundation-style', get_template_directory_uri() . '/css/vendor/foundation.css' );
 	wp_enqueue_script( 'foundation-script', get_template_directory_uri() . '/js/vendor/foundation.js', array(), false, true );
 
+	// custom css file
 	wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/custom.css' );
 
 	// Bootstrap

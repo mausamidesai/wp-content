@@ -12,7 +12,7 @@
 ?>
 </div>
 
-<!-- A custom WP_Query() for my bag post -->
+<!-- A custom WP_Query for my bag post -->
 <div class="grid-container">
 	<div class="grid-x grid-padding-x">
 		<?php

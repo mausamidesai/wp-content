@@ -29,6 +29,7 @@
 		<div class="grid-container">
 			<div class="grid-x">
 				<div class="cell small-2">
+					<!-- logo -->
 					<div class="site-branding">
 						<?php
 							the_custom_logo();
@@ -36,6 +37,7 @@
 					</div><!-- .site-branding -->
 				</div><!-- .cell -->
 				<div class="cell small-10">
+					<!-- navigation -->
 					<nav id="site-navigation" class="main-navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'sampletheme' ); ?></button>
 					<?php
@@ -51,6 +53,7 @@
 			</div><!-- .grid-x -->
 			<div class="grid-x">
 				<div class="cell small-8"></div>
+				<!-- search bar -->
 				<div class="cell small-4 search">
 					<?php echo get_search_form(); ?>
 				</div>

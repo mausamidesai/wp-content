@@ -1,3 +1,4 @@
+// wp register blocks 
 wp.blocks.registerBlockStyle( 
     'core/quote', 
     {
