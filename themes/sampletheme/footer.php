@@ -12,6 +12,7 @@
 ?>
 </div>
 
+<!-- A custom WP_Query() for my bag post -->
 <div class="grid-container">
 	<div class="grid-x grid-padding-x">
 		<?php
@@ -26,14 +27,18 @@
 			while ( $bag_query->have_posts() ) {
 				$bag_query->the_post();
 				?>
+					<!-- Title of bag post type -->
 					<div class= "small-12 large-12 cell">
 						<h3 class= "qTitle"><?php the_title(); ?></h3>
 					</div>
+					<!-- Featured Image of bag post type -->
 					<div class= "qpic">
 						<?php the_post_thumbnail(); ?>
 					</div>
 					<div class= "small-12 large-12 cell text">
+						<!-- Excerpt of bag post type -->
 						<p class= "qExcerpt"><?php the_excerpt(); ?></p>
+						<!-- Post Link of bag post type -->
 						<p class= "qPostLink"><?php echo '<a href="' . esc_url( get_permalink() ) . '" class="qLink">Read more</a>'?></p>
 					</div>
 				<?php
@@ -46,7 +51,7 @@
 	<footer id="colophon" class="site-footer">
 		<div class="grid-container">
 
-				<!-- <?php 
+			    <?php 
 				// if(has_nav_menu('menu-footer')) {
 				// wp_nav_menu(
 				// 	array(
@@ -55,22 +60,26 @@
 				// 	)
 				// );
 				// }
-				?> -->
+				?> 
 				
 				<div class="grid-x grid-padding-x">
+				<!-- Quick links of the site -->
 				<div class="cell small-3">
 					<div class="footerOne">
 					<h5>QUICK LINKS</h5>
 					<ul>
-						<li> Home </li>
-						<li> About Us </li>
-						<li> Women  </li>
-						<li> Men </li>
-						<li> Sale </li>
-						<li> Contact Us </li>
+						<li> <a href= "https://cwd450001.local/">Home</a> </li>
+						<li> <a href= "https://cwd450001.local/about/">About Us</a> </li>
+						<li> <a href= "https://cwd450001.local/shop/">Shop</a> </li>
+						<li> <a href= "https://cwd450001.local/my-account/">My Account</a> </li>
+						<li> <a href= "https://cwd450001.local/checkout/">Check Out</a> </li>
+						<li> <a href= "https://cwd450001.local/contact-2/">Contact Us</a> </li>
+						<li> <a href= "https://cwd450001.local/cart/">Cart</a> </li>
+						<li> <a href= "https://cwd450001.local/blog/">Blog</a> </li>
 					</ul>
 					</div>
 				</div>
+				<!-- Customer care of the site -->
 				<div class="cell small-3">
 					<div Class="footerTwo">
 					<h5>CUSTOMER CARE</h5>
@@ -86,6 +95,7 @@
 					</ul>
 					</div>
 				</div>
+				<!-- About of the site -->
 				<div class="cell small-3">
 					<div Class="footerThree">
 					<h5>ABOUT US</h5>
@@ -100,7 +110,8 @@
 					</div>
 				</div>
 
-				<div class="cell small-3">
+				<!-- Social media links -->
+				<div class="cell small-3 social">
 				<?php
 					$facebook_url = get_theme_mod( 'facebook_url' );
 					$twitter_url = get_theme_mod( 'twitter_url' );
@@ -127,24 +138,18 @@
 				</div>
 			</div>
 		</div>
-
+		
+		<!-- copyright -->
 		<div class="grid-container">
-		<div class="grid-x grid-padding-x">
-				<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sampletheme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'sampletheme' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'sampletheme' ), 'sampletheme', '<a href="https://mausamidesai.com">Mausami Desai</a>' );
-				?>
-		    </div><!-- .site-info -->
+			<div class="cell large-12 small-12 copy">
+				<div class="copyright">
+					<a href="https://wordpress.org/">Proudly powered by WordPress</a>
+					<span class="seprator"> | </span>
+					Yellow Bags by 	
+					<a href="/">Mausami Desai</a>
+		    	</div><!-- .copyright -->
 			</div>
-			</div>
+		</div><!-- .grid-container -->
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->
