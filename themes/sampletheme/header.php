@@ -56,8 +56,8 @@
 				<!-- search bar -->
 				<div class="cell small-4 search">
 					<?php echo get_search_form(); ?>
-				</div>
-			</div>
+				</div><!-- .search -->
+			</div><!-- .grid-x -->
 		</div><!-- .grid-container -->
 	</header><!-- #masthead -->
 	<div class="site-content grid-container">

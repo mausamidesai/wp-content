@@ -115,8 +115,16 @@ footer.entry-footer {
     text-align: center;
 }
 
+.page-header hr {
+    max-width: 18rem;
+}
+
 h2.entry-title {
     text-align: center;
+}
+
+.entry-title a {
+    color: black;
 }
 
 .hQuery {
@@ -145,11 +153,19 @@ h3.qTitle {
     font-size: 16px;
 }
 
+a.qLink {
+    color: white;
+}
+
 .qLink {
     font-size: 20px;
     padding: 15px;
     background-color: #18b8c4;
     cursor: pointer;
+}
+
+.qLink:hover {
+    background-color: #ffaf3c;
 }
 
 /* shop page */
@@ -169,6 +185,10 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
     background-color: #18b8c4;
     cursor: pointer;
     color: #fff;
+}
+
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
+    background-color: #ffaf3c;
 }
 
 a.added_to_cart.wc-forward {
@@ -233,12 +253,29 @@ button#place_order {
     background-color: #18b8c4;
 }
 
+button#place_order:hover {
+    background-color: #ffaf3c;
+}
+
 /* cart page */
+.woocommerce .cart .button, .woocommerce .cart input.button {
+    background-color: #18b8c4;
+    color: white;
+}
+
 a.checkout-button.button.alt.wc-forward {
     background-color: #18b8c4;
+}
+
+a.checkout-button.button.alt.wc-forward:hover {
+    background-color: #ffaf3c;
 }
 
 /* contact page */
 button#wsf-1-field-14 {
     background-color: #18b8c4;
+}
+
+button#wsf-1-field-14:hover {
+    background-color: #ffaf3c;
 }

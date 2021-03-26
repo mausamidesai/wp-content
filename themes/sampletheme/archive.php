@@ -18,6 +18,7 @@ get_header();
 				<?php
 				the_archive_title( '<h2 class="page-title">', '</h2>' );
 				?>
+				<hr>
 			</header><!-- .page-header -->
 
 			<?php
